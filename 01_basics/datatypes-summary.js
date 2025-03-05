@@ -12,7 +12,7 @@ let userEmail;
 const id =Symbol('123')
 const anotherId=Symbol('123')
 
-console.log(id===anotherId);
+// console.log(id===anotherId);
 
 const bigNumber = 211007070204n
 
@@ -27,10 +27,35 @@ let myObj = {
     age: 22,
 }
 
-const myFunctions = function(){ 
-        console.log("hello word");
+// const myFunctions = function(){ 
+//         console.log("hello word");
+// }
+
+// console.log(typeof bigNumber);
+// console.log(typeof outSideTemp);
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//stack (primitive), heap (non primitive)
+
+let myCode = "javaScrite"
+
+let myProject = myCode
+myProject = "html"
+
+console.log(myCode);
+console.log(myProject);
+
+let userOne = {
+    email: "divyesh2107@gmail.com",
+    upi: "mhjvfhc"
 }
 
-console.log(typeof bigNumber);
-console.log(typeof outSideTemp);
+let userTwo = userOne
+userTwo.email = "rudu0707@gmail.com"
 
+console.log(userOne.email);
+console.log(userTwo.email);
